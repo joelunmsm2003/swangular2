@@ -1,3 +1,14 @@
 <h1>
-  {{title}}
+  {{title}} {{que}} {{food}}
 </h1>
+
+<ul>
+    <li *ngFor="let person of message">
+     
+        {{person.precio}} 
+      
+    </li>
+  </ul>
+
+  {{message.precio}}
+<button class="btn btn-primary" (click)="ping()">Ping</button>
